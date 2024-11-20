@@ -1,8 +1,7 @@
-const http = require("hello");
+const http = require("http");
 
-const app = http.createServer((req , res) => {
-    res.write("hello...");
+http.createServer((req , res) => {
+    res.write("<h1>Good Evening</h1>");
+    res.write("<h1>Good Evening....</h1>");
     res.end();
-})
-
-app.listen(8080);
+}).listen(8080);
